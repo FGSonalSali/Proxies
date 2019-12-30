@@ -14,10 +14,9 @@ echo $revision_stable
 
   new_deployment=$(apigeetool deployproxy -L "http://192.168.2.40:8080" -u trial@apigee.com -o trial -e test -n $f -d . -p $pass -k)
   echo $new_deployment
-  cd /tests
+  cd tests/
   for t in *;do
-	  bash jmeter.sh -n -t Status_check.jmx -l $f.log
-	  bash jmeter.sh -n -t code_checkjmx.jmx -l $f.log
+	  jmeter.sh -n -t $t -l $f.log
   done
   cd ..
   cd ..
