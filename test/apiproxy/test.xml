@@ -1,0 +1,19 @@
+<APIProxy revision="4" name="test">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1591865314082</CreatedAt>
+    <LastModifiedAt>1591865314082</LastModifiedAt>
+    <BasePaths>/test</BasePaths>
+    <Policies>
+        <Policy>Verify-API-Key-1</Policy>
+        <Policy>EV-Extract002101Request</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources></Resources>
+    <TargetServers></TargetServers>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

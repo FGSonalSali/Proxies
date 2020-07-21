@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-Extract002101Request">
+    <DisplayName>EV-Extract002101Request</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <Source clearPayload="false">request</Source>
+    <VariablePrefix>middlewareRequest</VariablePrefix>
+    <XMLPayload stopPayloadProcessing="false">
+        <Namespaces>
+            <Namespace>http://tempuri.org/</Namespace>
+        </Namespaces>
+        <Variable name="request.body" type="nodeset">
+            <XPath>//GetSingleSignOnResponseXML</XPath>
+        </Variable>
+    </XMLPayload>
+</ExtractVariables>
